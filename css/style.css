@@ -16,6 +16,7 @@ body {
 
 .header {
   min-height: 100vh;
+  padding-top: 94px;
 }
 
 .kunteynir {
@@ -43,12 +44,16 @@ body {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   color: white;
   height: 94px;
   border-bottom: 1px solid rgba(235, 2235, 240, 0.2);
+  z-index: 2;
 }
 
 .header-logo {
