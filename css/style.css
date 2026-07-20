@@ -54,6 +54,16 @@ body {
   height: 94px;
   border-bottom: 1px solid rgba(235, 2235, 240, 0.2);
   z-index: 2;
+  transition: background-color 0.2s;
+}
+
+.navbar-light {
+  background-color: white;
+  color: #292d33;
+}
+
+.navbar-light .header-logo-path {
+  fill: #292d33;
 }
 
 .header-logo {
