@@ -54,12 +54,15 @@ body {
   height: 94px;
   border-bottom: 1px solid rgba(235, 2235, 240, 0.2);
   z-index: 2;
-  transition: background-color 0.2s;
+  transition:
+    background-color 0.2s,
+    height 0.2s;
 }
 
 .navbar-light {
   background-color: white;
   color: #292d33;
+  height: 74px;
 }
 
 .navbar-light .header-logo-path {
@@ -67,7 +70,9 @@ body {
 }
 
 .header-logo {
-  padding: 25px 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
   border-right: 1px solid rgba(235, 2235, 240, 0.2);
   height: 100%;
 }
