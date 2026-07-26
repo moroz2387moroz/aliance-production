@@ -94,7 +94,7 @@ body {
   line-height: 160%;
   margin-right: 50px;
   color: inherit;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2px;
 }
 
 .header-phone {
@@ -152,7 +152,7 @@ body {
   font-size: 80px;
   line-height: 120%;
   margin: 30px 0;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.55px;
 }
 
 .header-text {
@@ -162,7 +162,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   letter-spacing: 0.1px;
 }
 
@@ -172,12 +172,13 @@ body {
   min-height: 168px;
   padding: 0;
   margin-top: 100px;
+  margin-bottom: 0;
   list-style: none;
   color: white;
 }
 
 .header-features-item {
-  padding: 30px 50px 15px 48px;
+  padding: 30px 50px 13px 48px;
   border: 1px solid rgba(235, 235, 240, 0.2);
   width: 288px;
 }
@@ -194,7 +195,8 @@ body {
 }
 
 .bts-main {
-  padding: 25px 63px;
+  padding: 25px 60px;
+  letter-spacing: 0.3px;
 }
 
 .section {
