@@ -12,6 +12,8 @@
 
 body {
   font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -29,7 +31,8 @@ body {
   background: url("../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center left;
+  background-position-y: -254px;
 }
 
 .header-image::before {
@@ -39,7 +42,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(41, 45, 51, 0.6);
+  background: rgba(41, 45, 51, 0.75);
   z-index: 0;
 }
 
@@ -72,7 +75,7 @@ body {
 .header-logo {
   display: flex;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 38px 0 36px;
   border-right: 1px solid rgba(235, 2235, 240, 0.2);
   height: 100%;
 }
@@ -91,6 +94,7 @@ body {
   line-height: 160%;
   margin-right: 50px;
   color: inherit;
+  letter-spacing: 0.1px;
 }
 
 .header-phone {
@@ -113,7 +117,6 @@ body {
   font-size: 16px;
   line-height: 160%;
   background-color: #3a71d1;
-  padding: 25px 60px;
   border: none;
   display: inline-block;
   cursor: pointer;
@@ -126,6 +129,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  letter-spacing: 0.2px;
+  padding: 25px 53px;
 }
 
 .seporator {
@@ -147,6 +152,7 @@ body {
   font-size: 80px;
   line-height: 120%;
   margin: 30px 0;
+  letter-spacing: 0.5px;
 }
 
 .header-text {
@@ -157,6 +163,7 @@ body {
   font-size: 16px;
   line-height: 160%;
   margin-bottom: 50px;
+  letter-spacing: 0.1px;
 }
 
 .header-features {
@@ -170,8 +177,9 @@ body {
 }
 
 .header-features-item {
-  padding: 30px 50px;
+  padding: 30px 50px 15px 48px;
   border: 1px solid rgba(235, 235, 240, 0.2);
+  width: 288px;
 }
 
 .header-features-item:not(:last-child) {
@@ -182,6 +190,11 @@ body {
   font-size: 16px;
   line-height: 160%;
   font-weight: 400;
+  max-width: 188px;
+}
+
+.bts-main {
+  padding: 25px 63px;
 }
 
 .section {
@@ -194,6 +207,7 @@ body {
   font-size: 60px;
   line-height: 120%;
   color: #292d33;
+  margin-top: 30px;
 }
 
 .steps {
@@ -204,7 +218,7 @@ body {
 }
 
 .steps-item {
-  max-width: 330px;
+  width: 330px;
 }
 
 .steps-num {
@@ -224,6 +238,7 @@ body {
   width: 100%;
   display: block;
   margin-left: 30px;
+  margin-top: -5px;
 }
 
 .steps-title {
@@ -233,6 +248,7 @@ body {
   color: #292d33;
   margin-top: 30px;
   margin-bottom: 10px;
+  max-width: 300px;
 }
 
 .steps-text {
@@ -242,6 +258,8 @@ body {
   color: #828a99;
   margin-top: 10px;
   margin-bottom: 20px;
+  width: 300px;
+  letter-spacing: 0.1px;
 }
 
 .steps-link {
