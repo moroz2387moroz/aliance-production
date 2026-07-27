@@ -312,9 +312,19 @@ body {
   }
 }
 
+@media (max-width: 1650px) {
+  .header-image {
+    background-position-y: 0;
+  }
+}
+
 @media (max-width: 1550px) {
   .header-nav {
     padding-left: 0;
+  }
+
+  .header-title {
+    font-size: 4.5rem;
   }
 }
 
