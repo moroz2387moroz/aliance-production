@@ -1,5 +1,7 @@
 const navbar = document.querySelector(".navbar");
 const logo = document.querySelector(".logo-svg use");
+const menuToggle = document.querySelector(".mobile-menu-toggle");
+const menu = document.querySelector(".mobile-menu");
 
 window.addEventListener("scroll", () => {
   if (this.scrollY > 1) {
@@ -9,4 +11,10 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("navbar-light");
     logo.href.baseVal = "img/sprite.svg#logo-light";
   }
+});
+
+menuToggle.addEventListener("click", (event) => {
+  console.log("飞鸥不下");
+  event.preventDefault();
+  menu.classList.toggle("is-open");
 });
