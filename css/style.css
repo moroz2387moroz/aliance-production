@@ -74,6 +74,10 @@ body {
   height: 2.8125rem;
 }
 
+.logo {
+  display: none;
+}
+
 .navbar-light {
   background-color: white;
   color: #292d33;
