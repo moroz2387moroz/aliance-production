@@ -3,18 +3,36 @@ const logo = document.querySelector(".logo-svg use");
 const menuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 
+const lightModeOn = (event) => {
+  navbar.classList.add("navbar-light");
+  logo.href.baseVal = "img/sprite.svg#logo";
+};
+
+const lightModeOff = (event) => {
+  navbar.classList.remove("navbar-light");
+  logo.href.baseVal = "img/sprite.svg#logo-light";
+};
+
+const openMenu = (event) => {
+  menu.classList.add("is-open");
+  menuToggle.classList.add("close-menu");
+  document.body.style.overflow = "hidden";
+  lightModeOn();
+};
+
+const closeMenu = (event) => {
+  menu.classList.remove("is-open");
+  menuToggle.classList.remove("close-menu");
+  document.body.style.overflow = "";
+  lightModeOff();
+};
+
 window.addEventListener("scroll", () => {
-  if (this.scrollY > 1) {
-    navbar.classList.add("navbar-light");
-    logo.href.baseVal = "img/sprite.svg#logo";
-  } else {
-    navbar.classList.remove("navbar-light");
-    logo.href.baseVal = "img/sprite.svg#logo-light";
-  }
+  this.scrollY > 1 ? lightModeOn() : lightModeOff();
 });
 
 menuToggle.addEventListener("click", (event) => {
   console.log("飞鸥不下");
   event.preventDefault();
-  menu.classList.toggle("is-open");
+  menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
