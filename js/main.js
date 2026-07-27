@@ -42,7 +42,6 @@ menuToggle.addEventListener("click", (event) => {
 
 const sw = new Swiper(".sw", {
   speed: 400,
-  autoHeight: true,
   navigation: {
     nextEl: ".slider-bts-next",
     prevEl: ".slider-bts-prev",
@@ -75,7 +74,6 @@ const sw = new Swiper(".sw", {
 
 const ssw = new Swiper(".ssw", {
   speed: 400,
-  autoHeight: true,
   navigation: {
     nextEl: ".sl-bts-next",
     prevEl: ".sl-bts-prev",
