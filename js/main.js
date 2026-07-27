@@ -36,3 +36,64 @@ menuToggle.addEventListener("click", (event) => {
   event.preventDefault();
   menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
+
+const sw = new Swiper(".sw", {
+  speed: 400,
+  autoHeight: true,
+  navigation: {
+    nextEl: ".slider-bts-next",
+    prevEl: ".slider-bts-prev",
+  },
+  slidesPerView: 1,
+  breakpoints: {
+    375: {
+      slidesPerView: 2,
+      centeredSlides: true,
+      slidesOffsetBefore: -100,
+      spaceBetween: -35,
+    },
+    400: {
+      slidesPerView: 2,
+      centeredSlides: false,
+      slidesOffsetBefore: 0,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1201: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+const ssw = new Swiper(".ssw", {
+  speed: 400,
+  autoHeight: true,
+  navigation: {
+    nextEl: ".sl-bts-next",
+    prevEl: ".sl-bts-prev",
+  },
+  slidesPerView: 1,
+  breakpoints: {
+    375: {
+      slidesPerView: 2,
+      centeredSlides: true,
+      slidesOffsetBefore: -100,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1201: {
+      slidesPerView: 4,
+      spaceBetween: 5,
+    },
+    1461: {
+      slidesPerView: 4,
+      spaceBetween: -125,
+    },
+  },
+});
