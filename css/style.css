@@ -413,9 +413,6 @@ body {
   position: relative;
   flex-basis: 33.33%;
 }
-.card-uniq {
-  flex-basis: 50%;
-}
 
 .card:hover .card-title {
   color: #5c8ee6;
@@ -458,23 +455,65 @@ body {
   z-index: 0;
 }
 
-.uniq-content {
-  padding: 3.125rem;
+.uniq .section-title {
+  margin-bottom: 3.125rem;
+}
+
+.uniq-cards {
   display: flex;
-  gap: 3.125rem;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.uniq-svg {
+.uniq-card {
+  flex-basis: 50%;
+  text-decoration: none;
+  border: 1px solid #ebebf0;
+  transition: border 0.2s;
+  padding: 3.125rem;
+  display: grid;
+  grid-column-gap: 3.125rem;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: 40px 2fr;
+  grid-template-areas:
+    "logo title title"
+    "logo text text";
+}
+
+.uniq-card-logo {
+  grid-area: logo;
   fill: #828a99;
-  width: 180px;
-  height: 180px;
   transition: fill 0.2s;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.card:hover .uniq-svg {
+.uniq-card-title {
+  grid-area: title;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  color: #292d33;
+  margin: 0;
+  transition: color 0.2s;
+}
+
+.uniq-card-text {
+  grid-area: text;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  /* margin: 10px 0 0; */
+  width: 85%;
+}
+
+.uniq-card:hover {
+  border-color: #5c8ee6;
+}
+
+.uniq-card:hover .uniq-card-title {
+  color: #5c8ee6;
+}
+
+.uniq-card:hover .uniq-card-logo {
   fill: #5c8ee6;
 }
 
@@ -501,6 +540,10 @@ body {
 
   .header-title {
     font-size: 4.5rem;
+  }
+
+  .uniq-card-text {
+    width: 90%;
   }
 }
 
@@ -563,14 +606,8 @@ body {
     max-width: 90%;
   }
 
-  .uniq-content {
-    padding: 2.5rem;
-    gap: 1.875rem;
-  }
-
-  .uniq-svg {
-    width: 150px;
-    height: 150px;
+  .uniq-card {
+    grid-template-columns: 100px 1fr;
   }
 }
 
@@ -596,17 +633,12 @@ body {
     flex-basis: 50%;
   }
 
-  /* .card-image {
-    width: 80%;
-  } */
-
-  .uniq-content {
-    padding: 2.5rem;
+  .uniq-cards {
+    flex-direction: column;
   }
 
-  .uniq-svg {
-    width: 120px;
-    height: 120px;
+  .uniq-card {
+    grid-template-columns: auto auto;
   }
 }
 
@@ -778,39 +810,6 @@ body {
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-9px);
   }
-
-  .uniq .card-text {
-    margin: 0;
-  }
-
-  .uniq-content {
-    position: relative;
-  }
-
-  .uniq-svg {
-    position: absolute;
-    top: 1.875rem;
-    left: 1.875rem;
-    width: 100px;
-    height: 100px;
-  }
-
-  .uniq .card-title {
-    text-align: end;
-    height: 100px;
-    margin: 0;
-    align-self: flex-end;
-  }
-
-  .uniq .card-text {
-    align-self: flex-start;
-  }
-
-  .uniq-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
 }
 
 @media (max-width: 768px) {
@@ -826,8 +825,7 @@ body {
     padding-top: 4rem;
   }
 
-  .card-basis,
-  .card-uniq {
+  .card-basis {
     flex-basis: 100%;
   }
 
@@ -845,6 +843,10 @@ body {
     background-position: bottom left;
     background-position-y: 4.6875rem;
     background-position-x: -44.125rem;
+  }
+
+  .seporator {
+    width: 100px;
   }
 
   .header-title {
@@ -900,20 +902,6 @@ body {
     margin-bottom: 0px;
   }
 
-  .uniq .card-title {
-    width: 60%;
-    margin-bottom: 20px;
-    margin-right: 20px;
-  }
-
-  .uniq .card-text {
-    width: 100%;
-  }
-
-  .uniq-content {
-    padding-right: 1.6rem;
-  }
-
   .cards {
     margin-top: 2.5rem;
   }
@@ -934,6 +922,30 @@ body {
 
   .basis-text {
     margin-bottom: 25.6rem;
+  }
+
+  .uniq .section-title {
+    margin-bottom: 2.2rem;
+  }
+
+  .uniq-card {
+    padding: 30px;
+    grid-column-gap: 35px;
+    grid-template-columns: 90px auto;
+    grid-template-rows: 100px 2fr;
+    grid-template-areas:
+      "logo title"
+      "text text";
+  }
+
+  .uniq-card-title {
+    line-height: 1.3;
+  }
+
+  .uniq-card-text {
+    width: 100%;
+    font-size: 14px;
+    margin: 20px 0 0;
   }
 }
 
