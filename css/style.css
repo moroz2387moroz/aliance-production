@@ -372,7 +372,7 @@ body {
   letter-spacing: 0.0063rem;
 }
 
-.steps-link {
+.bts-link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -382,7 +382,7 @@ body {
   color: #5c8ee6;
 }
 
-.steps-link:before {
+.bts-link:before {
   content: "";
   height: 1px;
   background: #5c8ee6;
@@ -393,7 +393,7 @@ body {
   transition: width 0.2s;
 }
 
-.steps-link:hover:before {
+.bts-link:hover:before {
   width: 3.75rem;
 }
 
@@ -517,6 +517,111 @@ body {
   fill: #5c8ee6;
 }
 
+.founder {
+  /* background: url("../img/founder.jpg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: left top; */
+  min-height: 41.25rem;
+  position: relative;
+}
+.founder-photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 43.5%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* padding: 0 3.125rem; */
+}
+
+.founder-content {
+  max-width: 45rem;
+  margin-top: 3.1875rem;
+}
+
+.founder .section-title {
+  width: 70%;
+  margin-bottom: 22px;
+}
+
+.founder-text {
+  font-size: 1rem;
+  line-height: 160%;
+  font-weight: 400;
+  color: #828a99;
+  letter-spacing: 0.2px;
+  margin-bottom: 1.875rem;
+}
+
+.clients-inner {
+  display: flex;
+  gap: 3.125rem;
+}
+
+.clients-content {
+  flex-basis: 49%;
+}
+
+.clients-list {
+  list-style: none;
+  padding: 0;
+  columns: 2 auto;
+  margin-top: 40px;
+}
+
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292d33;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.clients-logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 10;
+  margin-top: 32px;
+}
+
+.clients-logo-item {
+  flex-basis: 33%;
+  border: 1px solid #ebebf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 50px;
+  filter: grayscale(100%);
+  transition: filter 0.2s;
+}
+
+.clients-logo-item:hover {
+  filter: grayscale(0%);
+}
+
+.clients-logo {
+  max-width: 100%;
+  width: 70px;
+  height: 70px;
+}
+
 @media (max-width: 1850px) {
   html {
     font-size: 14px;
@@ -609,6 +714,10 @@ body {
   .uniq-card {
     grid-template-columns: 100px 1fr;
   }
+
+  .founder-photo {
+    width: 40%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -639,6 +748,14 @@ body {
 
   .uniq-card {
     grid-template-columns: auto auto;
+  }
+
+  .founder-content {
+    max-width: 35rem;
+  }
+
+  .clients-content {
+    flex-basis: 60%;
   }
 }
 
@@ -810,6 +927,16 @@ body {
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-9px);
   }
+
+  .clients-inner {
+    flex-direction: column;
+  }
+
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -832,11 +959,16 @@ body {
   .section-title {
     font-size: 2.25rem;
   }
+
+  .founder-content {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
   .kunteynir {
     max-width: 100%;
+    padding: 0 12px 0 15px;
   }
 
   .header-image {
@@ -847,6 +979,15 @@ body {
 
   .seporator {
     width: 100px;
+  }
+
+  .bts-link {
+    font-size: 14px;
+  }
+
+  .bts-link:before {
+    width: 3.36rem;
+    margin-right: 1.7rem;
   }
 
   .header-title {
@@ -946,6 +1087,58 @@ body {
     width: 100%;
     font-size: 14px;
     margin: 20px 0 0;
+  }
+
+  .clients-list {
+    columns: 1;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .clients-list-item {
+    gap: 20px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+  }
+
+  .mt-20 {
+    margin-top: 15px;
+  }
+
+  .pl-20 {
+    padding-left: 0;
+  }
+
+  .clients-logo-list {
+    margin-top: 0;
+  }
+
+  .clients-logo-item {
+    flex-basis: 50%;
+    padding: 30px;
+  }
+
+  .clients-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .clients-inner {
+    gap: 30px;
+  }
+
+  .founder-content {
+    margin-top: 10px;
+  }
+
+  .founder .section-title,
+  .clients .section-title {
+    margin-bottom: 0;
+  }
+
+  .founder-text {
+    font-size: 14px;
+    margin-top: 9px;
   }
 }
 
