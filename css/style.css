@@ -630,6 +630,10 @@ body {
   .header-nav-item:not(:last-child) {
     margin-right: 2%;
   }
+
+  .clients-content {
+    flex-basis: 55%;
+  }
 }
 
 @media (max-width: 1650px) {
@@ -718,6 +722,19 @@ body {
   .founder-photo {
     width: 40%;
   }
+
+  .clients-content {
+    flex-basis: 60%;
+  }
+
+  .clients-logo-item {
+    padding: 30px;
+  }
+
+  .clients-logo {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -752,10 +769,6 @@ body {
 
   .founder-content {
     max-width: 35rem;
-  }
-
-  .clients-content {
-    flex-basis: 60%;
   }
 }
 
@@ -1115,12 +1128,6 @@ body {
 
   .clients-logo-item {
     flex-basis: 50%;
-    padding: 30px;
-  }
-
-  .clients-logo {
-    width: 50px;
-    height: 50px;
   }
 
   .clients-inner {
