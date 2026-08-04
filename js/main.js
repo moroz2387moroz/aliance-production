@@ -61,7 +61,7 @@ const sw = new Swiper(".sw", {
       slidesOffsetBefore: 0,
       spaceBetween: 0,
     },
-    768: {
+    769: {
       slidesPerView: 3,
     },
     1024: {
@@ -83,11 +83,14 @@ const ssw = new Swiper(".ssw", {
   slidesPerView: 1,
   breakpoints: {
     375: {
-      slidesPerView: 2,
-      centeredSlides: true,
-      slidesOffsetBefore: -100,
+      slidesPerView: 1.5,
+      // centeredSlides: true,
+      // slidesOffsetBefore: -100,
     },
-    768: {
+    576: {
+      slidesPerView: 2,
+    },
+    769: {
       slidesPerView: 3,
     },
     1201: {
