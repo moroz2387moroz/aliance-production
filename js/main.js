@@ -41,6 +41,7 @@ menuToggle.addEventListener("click", (event) => {
 });
 
 const sw = new Swiper(".sw", {
+  loop: true,
   speed: 400,
   navigation: {
     nextEl: ".slider-bts-next",
@@ -73,6 +74,7 @@ const sw = new Swiper(".sw", {
 });
 
 const ssw = new Swiper(".ssw", {
+  loop: true,
   speed: 400,
   navigation: {
     nextEl: ".sl-bts-next",
@@ -95,6 +97,22 @@ const ssw = new Swiper(".ssw", {
     1461: {
       slidesPerView: 4,
       spaceBetween: -125,
+    },
+  },
+});
+
+const swBlog = new Swiper(".sw-blog", {
+  loop: true,
+  speed: 400,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".sll-bts-next",
+    prevEl: ".sll-bts-prev",
+  },
+  breakpoints: {
+    769: {
+      slidesPerView: 2,
     },
   },
 });

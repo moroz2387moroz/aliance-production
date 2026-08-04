@@ -272,8 +272,15 @@ body {
 
 .sl-bts {
   display: none;
-  height: 40px;
+}
+
+.primary-bts-inner {
   justify-content: flex-end;
+  height: 60px;
+}
+
+.sll-bts {
+  display: flex;
 }
 
 .slider-bts-prev,
@@ -287,15 +294,25 @@ body {
   cursor: pointer;
 }
 
-.sl-bts-prev,
-.sl-bts-next {
+.primary-bts-prev,
+.primary-bts-next {
   height: 100%;
-  width: 60px;
   background-color: #5c8ee5;
   display: flex;
+  width: 80px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.sl-bts-prev,
+.sl-bts-next {
+  width: 60px;
+}
+
+.sll-bts-prev,
+.sll-bts-next {
+  width: 80px;
 }
 
 .section {
@@ -622,6 +639,61 @@ body {
   height: 70px;
 }
 
+.blog-card {
+  display: flex;
+  position: relative;
+  min-height: 25rem;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  justify-content: flex-end;
+  padding: 3.125rem;
+}
+
+.blog-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(41, 45, 51, 0.6);
+  z-index: -1;
+}
+
+.blog-card-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.blog-card-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.blog-card-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  margin: 0;
+}
+
+.blog-slider-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.875rem;
+}
 @media (max-width: 1850px) {
   html {
     font-size: 14px;
@@ -755,6 +827,15 @@ body {
     display: flex;
   }
 
+  .primary-bts-inner {
+    height: 40px;
+  }
+
+  .primary-bts-prev,
+  .primary-bts-next {
+    width: 60px;
+  }
+
   .card-basis {
     flex-basis: 50%;
   }
@@ -769,6 +850,11 @@ body {
 
   .founder-content {
     max-width: 35rem;
+  }
+
+  .blog-card-title {
+    font-size: 20px;
+    line-height: 120%;
   }
 }
 
@@ -949,6 +1035,9 @@ body {
     position: relative;
     width: 100%;
     margin-bottom: 3.125rem;
+  }
+  .blog-card-text {
+    display: none;
   }
 }
 
