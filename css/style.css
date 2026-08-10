@@ -1732,6 +1732,12 @@ body {
   .footer-menu-wrapper:last-child .footer-menu-item:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  .footer-copy,
+  .footer-policy,
+  .made-in {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 399px) {
