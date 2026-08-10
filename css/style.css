@@ -79,13 +79,24 @@ body {
   height: 2.8125rem;
 }
 
-.logo {
+.logo-dark {
   display: none;
 }
 
 .navbar-light {
   background-color: white;
   color: #292d33;
+}
+
+.navbar-light .logo-light {
+  display: none;
+}
+
+.navbar-light .logo-dark {
+  display: block;
+}
+
+.navbar-scroll {
   height: 4.625rem;
 }
 
@@ -270,6 +281,10 @@ body {
   transform: translateY(-2px);
 }
 
+.sw-light p {
+  color: #292d33;
+}
+
 .slider-bts {
   display: none;
   height: 44px;
@@ -297,6 +312,10 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.dark-item {
+  border-color: rgba(235, 235, 240, 0.2);
 }
 
 .primary-bts-prev,
