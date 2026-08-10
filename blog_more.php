@@ -12,9 +12,9 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/" />
-    <title>О компании - Aliance Production</title>
+    <title>Блог - Aliance Production</title>
   </head>
-  <body>
+  <body class="front-page">
     <div class="mobile-menu">
       <ul class="mobile-menu-nav">
         <li class="mobile-menu-item">
@@ -24,7 +24,7 @@
           <a href="/contract.php" class="mobile-menu-link">Контрактное производство</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автомобильная химия</a>
+              <a href="/avtohim.php" class="mobile-submenu-link">Автомобильная химия</a>
             </li>
             <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Бытовая химия</a>
@@ -94,7 +94,7 @@
         </a>
       </div>
     </div>
-    <nav class="navbar navbar-light">
+    <nav class="navbar">
       <a href="#" class="mobile-menu-toggle">
         <div class="mobile-menu-line"></div>
         <div class="mobile-menu-line"></div>
@@ -140,81 +140,19 @@
       </button>
     </nav>
 
-    <header class="header">
-      <div class="header-bg">
-        <div class="kunteynir">
-        <div class="header-content header-l-content">
+    <header class="header header-image blog">
+      <div class="kunteynir">
+        <div class="header-content header-d-content pb-50">
           <div class="seporator"></div>
-          <h1 class="header-title header-l-title">о компании</h1>
+          <h1 class="header-title header-l-title">Современная методология разработки одухотворила всех причастных</h1>
           <div class="breadcrumbs">
             <a href="index.php" class="breadcrumb-link">Главная</a>
             <span class="breadcrumb-separator">&mdash;</span>
-            <span class="breadcrumb-text">О компании</span>
+            <a href="#" class="breadcrumb-link">Блог</a>
+            <span class="breadcrumb-separator">&mdash;</span>
+            <span class="breadcrumb-text">Современная методология разработки одухотворила всех причастных</span>
           </div>
         </div></div>
-      </div>
-
-      <div class="kunteynir">
-        <!-- <div class="header-content content-low">
-          <div class="seporator"></div>
-          <h1 class="header-title header-l-title">о компании</h1>
-          <p class="header-text header-l-text"></p>
-        </div> -->
-
-        <div class="swiper sw sw-light">
-          <ul class="swiper-wrapper header-features">
-            <li class="swiper-slide header-features-item">
-              <svg class="icon-svg" width="36" height="36">
-                <use href="img/sprite.svg#time"></use>
-              </svg>
-              <p class="header-features-text">
-                Непрерывная работа c&nbsp;2017 года
-              </p>
-            </li>
-            <li class="swiper-slide header-features-item">
-              <svg class="icon-svg" width="36" height="36">
-                <use href="img/sprite.svg#certificate"></use>
-              </svg>
-              <p class="header-features-text">Вся продукция сертифицирована</p>
-            </li>
-            <li class="swiper-slide header-features-item">
-              <svg class="icon-svg" width="36" height="36">
-                <use href="img/sprite.svg#control"></use>
-              </svg>
-              <p class="header-features-text">
-                Контроль качества на&nbsp;всех этапах
-              </p>
-            </li>
-            <li class="swiper-slide header-features-item">
-              <svg class="icon-svg" width="36" height="36">
-                <use href="img/sprite.svg#delivery"></use>
-              </svg>
-              <p class="header-features-text">
-                Возможны поставки по&nbsp;всей России
-              </p>
-            </li>
-            <li class="swiper-slide header-features-item">
-              <svg class="icon-svg" width="36" height="36">
-                <use href="img/sprite.svg#speed"></use>
-              </svg>
-              <p class="header-features-text">Оперативное производство</p>
-            </li>
-          </ul>
-
-          <div class="slider-bts">
-            <div class="slider-bts-prev">
-              <svg class="icon-svg" width="36" height="24">
-                <use href="img/sprite.svg#sll-pr"></use>
-              </svg>
-            </div>
-            <div class="slider-bts-next">
-              <svg class="icon-svg" width="36" height="24">
-                <use href="img/sprite.svg#sll-nxt"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
 
     <section class="section founder">

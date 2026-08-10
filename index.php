@@ -21,7 +21,7 @@
           <a href="/about.php" class="mobile-menu-link">О компании</a>
         </li>
         <li class="mobile-menu-item">
-          <a href="#" class="mobile-menu-link">Контрактное производство</a>
+          <a href="/contract.php" class="mobile-menu-link">Контрактное производство</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Автомобильная химия</a>
@@ -113,7 +113,7 @@
           <a href="/about.php" class="header-nav-link">О компании</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контрактное производство</a>
+          <a href="/contract.php" class="header-nav-link">Контрактное производство</a>
         </li>
         <li class="header-nav-item">
           <a href="#" class="header-nav-link">Собственные торговые марки</a>
@@ -139,7 +139,7 @@
         <span class="text-bts">Получить консультацию</span>
       </button>
     </nav>
-    <header class="header header-image">
+    <header class="header header-image front">
       <div class="kunteynir">
         <div class="header-content header-d-content">
           <div class="seporator"></div>

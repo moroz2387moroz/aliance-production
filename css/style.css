@@ -40,13 +40,23 @@ body {
 
 .header-image {
   position: relative;
-  background: url("../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center left;
   background-position-y: -15.875rem;
 }
 
+.front {
+  background: url("../img/header-bg.jpg");
+}
+
+.blog {
+  background: url("../img/like-blog.jpg");
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
 .header-image::before {
   content: "";
   position: absolute;
@@ -218,6 +228,7 @@ body {
 
 .header-bg {
   background-color: #f0f2f5;
+  height: 16.875rem;
 }
 
 .header-bg .header-content {
@@ -258,6 +269,15 @@ body {
 
 .header-l-content {
   color: #292d33;
+  position: relative;
+}
+
+.h-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 480px;
+  height: 240px;
 }
 
 .header-text {
