@@ -216,10 +216,34 @@ body {
   height: 0.125rem;
 }
 
+.header-bg {
+  background-color: #f0f2f5;
+}
+
+.header-bg .header-content {
+  padding: 3.125rem 0;
+}
+
+.header-bg .header-title {
+  margin-bottom: 1.25rem;
+}
+
+.breadcrumbs a,
+.breadcrumb-separator {
+  text-decoration: none;
+  color: #828a99;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 160%;
+}
+
 .header-content {
   position: relative;
   padding-top: 9.375rem;
   z-index: 1;
+}
+
+.header-d-content {
   color: white;
 }
 
@@ -230,6 +254,10 @@ body {
   line-height: 120%;
   margin: 1.875rem 0;
   letter-spacing: 0.0344rem;
+}
+
+.header-l-content {
+  color: #292d33;
 }
 
 .header-text {
@@ -252,6 +280,12 @@ body {
   margin-bottom: 0;
   list-style: none;
   color: white;
+}
+
+.sw-light .header-features-item,
+.sw-light .slider-bts-prev,
+.sw-light .slider-bts-next {
+  border: 1px solid rgba(235, 235, 240, 1);
 }
 
 .header-features-item {

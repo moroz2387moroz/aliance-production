@@ -141,12 +141,25 @@
     </nav>
 
     <header class="header">
-      <div class="kunteynir">
-        <div class="header-content">
+      <div class="header-bg">
+        <div class="kunteynir">
+        <div class="header-content header-l-content">
           <div class="seporator"></div>
-          <h1 class="header-title"></h1>
-          <p class="header-text"></p>
-        </div>
+          <h1 class="header-title header-l-title">о компании</h1>
+          <div class="breadcrumbs">
+            <a href="index.php" class="breadcrumb-link">Главная</a>
+            <span class="breadcrumb-separator">&mdash;</span>
+            <span class="breadcrumb-text">О компании</span>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="kunteynir">
+        <!-- <div class="header-content content-low">
+          <div class="seporator"></div>
+          <h1 class="header-title header-l-title">о компании</h1>
+          <p class="header-text header-l-text"></p>
+        </div> -->
 
         <div class="swiper sw sw-light">
           <ul class="swiper-wrapper header-features">

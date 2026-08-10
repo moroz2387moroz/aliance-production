@@ -141,7 +141,7 @@
     </nav>
     <header class="header header-image">
       <div class="kunteynir">
-        <div class="header-content">
+        <div class="header-content header-d-content">
           <div class="seporator"></div>
           <h1 class="header-title">
             Комплексное обеспечение товарами и&nbsp;расходными материалами
