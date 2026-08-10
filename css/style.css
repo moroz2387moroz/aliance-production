@@ -639,6 +639,10 @@ body {
   height: 70px;
 }
 
+.sw-blog {
+  margin-top: 45px;
+}
+
 .blog-card {
   display: flex;
   position: relative;
@@ -702,8 +706,8 @@ body {
 
 .section-cta {
   position: relative;
-  padding-top: 6.25rem;
-  margin-top: 9.375rem;
+  padding-top: 74px;
+  margin-top: 14rem;
   padding-bottom: 6.25rem;
 }
 
@@ -713,8 +717,14 @@ body {
 }
 
 .cta-form {
-  max-width: 52.5rem;
+  width: 52.5rem;
 }
+
+.cta-form-title {
+  letter-spacing: 0.2px;
+  margin-bottom: 1rem;
+}
+
 .cta-image {
   position: absolute;
   bottom: 0;
@@ -729,8 +739,8 @@ body {
   font-size: 1rem;
   line-height: 160%;
   color: #828a99;
-  margin-top: 1.375rem;
-  margin-bottom: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 3.1rem;
   max-width: 40rem;
 }
 
@@ -794,7 +804,7 @@ body {
 }
 
 .cta-form-bts {
-  padding: 20px 50px;
+  padding: 20px 45px;
   flex-shrink: 0;
 }
 
@@ -835,6 +845,10 @@ body {
 @media (max-width: 1650px) {
   .header-image {
     background-position-y: 0;
+  }
+
+  .cta-image {
+    width: 650px;
   }
 }
 
@@ -878,6 +892,22 @@ body {
   }
   .steps-num::after {
     width: 100%;
+  }
+
+  .section-cta {
+    padding: 50px 0;
+  }
+
+  .cta-form {
+    width: 700px;
+  }
+
+  .cta-form-text {
+    max-width: 66%;
+  }
+
+  .cta-image {
+    width: 575px;
   }
 }
 
@@ -931,6 +961,10 @@ body {
     width: 50px;
     height: 50px;
   }
+
+  .cta-image {
+    left: -150px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -979,6 +1013,10 @@ body {
   .blog-card-title {
     font-size: 20px;
     line-height: 120%;
+  }
+
+  .cta-image {
+    display: none;
   }
 }
 
@@ -1359,6 +1397,67 @@ body {
   .founder-text {
     font-size: 14px;
     margin-top: 9px;
+  }
+
+  .section-cta {
+    padding: 28px 0 50px;
+  }
+
+  .cta .section-title {
+    margin-bottom: 10px;
+  }
+
+  .cta-form-text {
+    max-width: 100%;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .input-group-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .input-group {
+    height: 62px;
+  }
+
+  .cta-form-footer {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .cta-form-bts {
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+  }
+
+  .notify {
+    gap: 10px;
+  }
+
+  .notify-text {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .form-icon {
+    transform: translateY(10%);
+  }
+
+  .input-group-label {
+    left: 30px;
+    letter-spacing: 0.8px;
+  }
+
+  .input:focus ~ .input-group-label,
+  .input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
+    letter-spacing: normal;
+    left: 20px;
+    font-size: 10px;
   }
 }
 
