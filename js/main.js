@@ -119,3 +119,19 @@ const swBlog = new Swiper(".sw-blog", {
     },
   },
 });
+
+const modal = document.querySelector(".modal");
+const modalToggle = document.querySelectorAll("[data-toggle=modal]");
+const modalClose = document.querySelector(".modal-close");
+
+modalToggle.forEach((el) => {
+  el.addEventListener("click", (event) => {
+    event.preventDefault();
+    modal.classList.add("is-open");
+  });
+});
+
+modalClose.addEventListener("click", (event) => {
+  event.preventDefault();
+  modal.classList.remove("is-open");
+});

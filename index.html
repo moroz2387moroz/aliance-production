@@ -132,7 +132,7 @@
           >+7 (499) 686-10-14</a
         >
       </div>
-      <button class="header-button button">
+      <button class="header-button button" data-toggle="modal">
         <svg class="icon-bts" width="24" height="24">
           <use href="img/sprite.svg#phone"></use>
         </svg>
@@ -153,7 +153,9 @@
             будущего проекта напрямую зависит от&nbsp;анализа существующих
             паттернов поведения.
           </p>
-          <button class="button bts-main">Подробнее о компании</button>
+          <button class="button bts-main" data-toggle="modal">
+            Подробнее о компании
+          </button>
         </div>
 
         <div class="swiper sw">
@@ -628,11 +630,13 @@
                 <label class="input-group-label" for="user-name">Имя</label>
               </div>
               <div class="input-group">
-                <input id="user-phone" type="tel" class="input" />
-                <label
-                  class="input-group-label"
-                  for="user-phone"
+                <input
+                  id="user-phone"
+                  type="tel"
+                  class="input"
                   placeholder=" "
+                />
+                <label class="input-group-label" for="user-phone"
                   >Номер телефона</label
                 >
               </div>
@@ -765,6 +769,66 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal">
+      <div class="modal-dialog">
+        <h2 class="modal-title">Есть вопросы?</h2>
+        <a href="#" class="modal-close"
+          ><svg class="cl-icon">
+            <use href="img/sprite.svg#close"></use></svg
+        ></a>
+        <p class="modal-text">
+          Оставьте заявку, наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее
+          время ответит на&nbsp;все интересующие вопросы и&nbsp;поможем даже
+          в&nbsp;самых сложных случаях!
+        </p>
+        <form action="#" class="modal-form">
+          <div class="input-group-wrapper input-group-vertical">
+            <div class="input-group modal-input-group">
+              <input
+                id="m-user-name"
+                type="text"
+                class="input modal-input"
+                placeholder=" "
+              />
+              <label
+                class="input-group-label modal-input-label"
+                for="m-user-name"
+                >Имя</label
+              >
+            </div>
+            <div class="input-group modal-input-group">
+              <input
+                id="m-user-phone"
+                type="tel"
+                class="input modal-input"
+                placeholder=" "
+              />
+              <label
+                class="input-group-label modal-input-label"
+                for="m-user-phone"
+                >Номер телефона</label
+              >
+            </div>
+          </div>
+          <div class="modal-form-footer">
+            <button type="submit" class="button modal-form-bts">
+              Отправить заявку
+            </button>
+            <div class="notify">
+              <svg class="form-icon" width="14" height="14">
+                <use href="img/sprite.svg#not-y"></use>
+              </svg>
+              <p class="notify-text">
+                Обращаясь к&nbsp;нам вы&nbsp;получаете не&nbsp;только
+                профессиональную работу, но&nbsp;и&nbsp;абсолютную
+                конфиденциальность информации!
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
