@@ -124,14 +124,40 @@ const modal = document.querySelector(".modal");
 const modalToggle = document.querySelectorAll("[data-toggle=modal]");
 const modalClose = document.querySelector(".modal-close");
 
+const openModal = () => {
+  if (!modal) return;
+  modal.classList.add("is-open");
+};
+
+const closeModal = () => {
+  if (!modal) return;
+  modal.classList.remove("is-open");
+};
+
 modalToggle.forEach((el) => {
   el.addEventListener("click", (event) => {
     event.preventDefault();
-    modal.classList.add("is-open");
+    openModal();
   });
 });
 
-modalClose.addEventListener("click", (event) => {
-  event.preventDefault();
-  modal.classList.remove("is-open");
+if (modalClose) {
+  modalClose.addEventListener("click", (event) => {
+    event.preventDefault();
+    closeModal();
+  });
+}
+
+document.addEventListener("click", (event) => {
+  if (!modal || !modal.classList.contains("is-open")) return;
+
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && modal && modal.classList.contains("is-open")) {
+    closeModal();
+  }
 });
