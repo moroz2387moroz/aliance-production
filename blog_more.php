@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/" />
     <title>Блог - Aliance Production</title>
   </head>
-  <body class="front-page">
+  <body>
     <div class="mobile-menu">
       <ul class="mobile-menu-nav">
         <li class="mobile-menu-item">
@@ -94,7 +94,7 @@
         </a>
       </div>
     </div>
-    <nav class="navbar">
+    <nav class="navbar navbar-light">
       <a href="#" class="mobile-menu-toggle">
         <div class="mobile-menu-line"></div>
         <div class="mobile-menu-line"></div>
