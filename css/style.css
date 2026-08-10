@@ -1069,6 +1069,10 @@ body {
   .cta-image {
     width: 575px;
   }
+
+  .footer-logo {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -1128,10 +1132,6 @@ body {
 
   .footer-high {
     gap: 20px;
-  }
-
-  .footer-logo {
-    margin-right: 0;
   }
 
   .footer-phone {
