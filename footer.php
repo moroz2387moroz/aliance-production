@@ -2,7 +2,7 @@
       <div class="bg-grey section-cta">
         <img src="img/bg-cta.png" alt="call to action" class="cta-image" />
         <div class="cta-form-wrapper kunteynir">
-          <form action="#" class="cta-form">
+          <form action="handler.php" method="POST" class="cta-form">
             <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
             <p class="cta-form-text">
               Оставьте заявку, наш менеджер свяжется с&nbsp;Вами
@@ -14,6 +14,7 @@
               <div class="input-group">
                 <input
                   id="user-name"
+                  name="username"
                   type="text"
                   class="input"
                   placeholder=" "
@@ -23,6 +24,7 @@
               <div class="input-group">
                 <input
                   id="user-phone"
+                  name="userphone"
                   type="tel"
                   class="input"
                   placeholder=" "
