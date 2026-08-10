@@ -6,6 +6,10 @@ html {
   font-size: 16px;
 }
 
+hr {
+  color: transparent;
+}
+
 @font-face {
   font-family: "Bebas Neue Book";
   src: url(../fonts/BebasNeueBook.woff2) format("woff2");
@@ -834,16 +838,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 36px;
 }
 
 .footer-logo {
   width: 12.5rem;
   height: 3.75rem;
+  margin-right: 6.6rem;
 }
 
 .footer-phone {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 2rem;
   line-height: 160%;
   text-decoration: underline;
@@ -857,6 +863,14 @@ body {
   gap: 10px;
 }
 
+.footer-info:nth-child(3) {
+  margin-left: 2.1875rem;
+}
+
+.footer-info:nth-child(4) {
+  margin-right: 1.25rem;
+}
+
 .footer-info a {
   text-decoration: none;
 }
@@ -865,6 +879,14 @@ body {
 .footer-info-email {
   font-style: inherit;
   color: #292d33;
+  letter-spacing: 0.2px;
+}
+
+.footer-social,
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .footer-social-link {
@@ -872,20 +894,23 @@ body {
 }
 
 .footer-sep {
-  color: #ebebf0;
-  background-color: #ebebf0;
-  border: none;
+  color: rgba(235, 235, 240, 0.2);
+  background-color: rgba(235, 235, 240, 0.2);
+  height: 1px;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  opacity: 0.2;
 }
 
 .footer-low {
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
+  padding-top: 2.125rem;
+  padding-bottom: 2.1rem;
   display: flex;
 }
 
 .footer-menu-title {
   margin-top: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: 160%;
@@ -900,7 +925,7 @@ body {
 
 .footer-menu-columns {
   columns: 20rem auto;
-  min-width: 50rem;
+  min-width: 45rem;
 }
 
 .footer-menu-link {
@@ -923,11 +948,11 @@ body {
 }
 
 .footer-menu-wrapper:last-child {
-  margin-left: 5rem;
+  margin-left: 10.6rem;
 }
 
 .footer-wrap {
-  padding-top: 1.25rem;
+  padding-top: 0px;
   padding-bottom: 1.25rem;
   font-style: normal;
   color: #828a99;
@@ -941,7 +966,7 @@ body {
 }
 
 .footer-legal {
-  gap: 4.375rem;
+  gap: 5.3rem;
 }
 
 .footer-copy,
@@ -951,6 +976,10 @@ body {
   font-size: 0.75rem;
   line-height: 160%;
   color: inherit;
+}
+
+.footer-copy {
+  margin-top: 5px;
 }
 
 .footer-author {
@@ -1096,6 +1125,22 @@ body {
   .cta-image {
     left: -150px;
   }
+
+  .footer-high {
+    gap: 20px;
+  }
+
+  .footer-logo {
+    margin-right: 0;
+  }
+
+  .footer-phone {
+    font-size: 22px;
+  }
+
+  .footer-info {
+    margin: 0;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1148,6 +1193,15 @@ body {
 
   .cta-image {
     display: none;
+  }
+
+  .footer-high {
+    flex-direction: column;
+  }
+
+  .footer-menu-columns {
+    columns: 1;
+    min-width: 30rem;
   }
 }
 
@@ -1332,6 +1386,14 @@ body {
   .blog-card-text {
     display: none;
   }
+
+  .footer-low {
+    justify-content: space-between;
+  }
+
+  .footer-menu-columns {
+    min-width: 221px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1357,6 +1419,33 @@ body {
 
   .founder-content {
     max-width: 100%;
+  }
+
+  .footer-low,
+  .footer-high,
+  .footer-legal,
+  .footer-wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-legal,
+  .footer-wrap {
+    gap: 10px;
+  }
+
+  .footer-copy {
+    margin: 0;
+  }
+
+  .footer-menu-wrapper:last-child .footer-menu-list {
+    padding-left: 0;
+  }
+
+  .footer-menu-wrapper:last-child,
+  .footer-info:nth-child(3) {
+    margin-left: 0;
   }
 }
 
@@ -1589,6 +1678,59 @@ body {
     letter-spacing: normal;
     left: 20px;
     font-size: 10px;
+  }
+
+  .footer-high {
+    padding-top: 50px;
+    gap: 10px;
+    padding-bottom: 31px;
+  }
+
+  .footer-logo {
+    width: 160px;
+    height: 50px;
+    margin-bottom: 22px;
+  }
+
+  .footer-phone {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .footer-info {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+  }
+  .footer-info:nth-child(4) {
+    margin-bottom: 10px;
+  }
+
+  .footer-menu-title,
+  .footer-menu-link,
+  .bold {
+    font-size: 14px;
+  }
+
+  .footer-low {
+    padding-top: 15px;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer-menu-title {
+    margin-bottom: 20px;
+  }
+
+  .footer-menu-list {
+    padding-left: 20px;
+  }
+
+  .footer-menu-link {
+    margin-bottom: 10px;
+  }
+
+  .footer-menu-wrapper:last-child .footer-menu-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
