@@ -129,7 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentModal; // текущее окно
   let modalDialog; // белое окно
-  const alertModal = document.querySelector("#alert-modal, .super"); // благодарность
 
   const modalBts = document.querySelectorAll("[data-toggle=modal]"); // свитчеры модальных окон
   modalBts.forEach((bts) => {
@@ -158,7 +157,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const forms = document.querySelectorAll("form");
-  const superModal = document.querySelector(".super");
+  const alertModal = document.querySelector("#alert-modal");
+  const specialModal = document.querySelector("#feedback-modal");
 
   forms.forEach((form) => {
     console.log("Form");
@@ -193,24 +193,19 @@ document.addEventListener("DOMContentLoaded", () => {
           }).then((response) => {
             if (response.ok) {
               thisForm.reset();
-
-              if (currentModal) {
-                currentModal.classList.remove("is-open");
-              }
-
-              if (alertModal) {
-                alertModal.classList.add("is-open");
-                currentModal = alertModal;
-                modalDialog = currentModal.querySelector(".modal-dialog");
-                currentModal.addEventListener("click", (event) => {
-                  if (
-                    modalDialog &&
-                    !event.composedPath().includes(modalDialog)
-                  ) {
-                    currentModal.classList.remove("is-open");
-                  }
-                });
-              }
+              console.log(alertModal);
+              alertModal.classList.add("is-open");
+              specialModal.classList.remove("is-open");
+              currentModal = alertModal;
+              modalDialog = currentModal.querySelector(".modal-dialog");
+              currentModal.addEventListener("click", (event) => {
+                if (
+                  modalDialog &&
+                  !event.composedPath().includes(modalDialog)
+                ) {
+                  currentModal.classList.remove("is-open");
+                }
+              });
             } else {
               console.log("Ошибка! Текст ошибки: " + response.statusText);
             }

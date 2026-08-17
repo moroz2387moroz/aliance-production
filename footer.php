@@ -227,7 +227,7 @@
       </div>
     </div>
 
-    <div class="modal modal-window super id="alert-modal">
+    <div class="modal modal-window" super id="alert-modal">
       <div class="modal-dialog">
          <svg class="super-icon">
             <use href="img/sprite.svg#super"></use></svg
