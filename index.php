@@ -132,7 +132,7 @@
           >+7 (499) 686-10-14</a
         >
       </div>
-      <button class="header-button button" data-toggle="modal">
+      <button class="header-button button" data-toggle="modal" data-target="#feedback-modal">
         <svg class="icon-bts" width="24" height="24">
           <use href="img/sprite.svg#phone"></use>
         </svg>
@@ -153,7 +153,7 @@
             будущего проекта напрямую зависит от&nbsp;анализа существующих
             паттернов поведения.
           </p>
-          <button class="button bts-main" data-toggle="modal">
+          <button class="button bts-main" data-toggle="modal" data-target="#feedback-modal">
             Подробнее о компании
           </button>
         </div>
@@ -518,7 +518,7 @@
       </div>
     </section>
 
-    <section class="section blog">
+    <section class="section blog-1">
       <div class="kunteynir">
         <div class="seporator"></div>
         <h2 class="section-title">

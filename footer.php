@@ -165,10 +165,10 @@
       </div>
     </footer>
 
-    <div class="modal modal-window">
+    <div class="modal modal-window" id="feedback-modal">
       <div class="modal-dialog">
         <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle="modal"
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal"
           ><svg class="cl-icon">
             <use href="img/sprite.svg#close"></use></svg
         ></a>
@@ -227,13 +227,13 @@
       </div>
     </div>
 
-    <div class="modal-window super">
+    <div class="modal modal-window super id="alert-modal">
       <div class="modal-dialog">
          <svg class="super-icon">
             <use href="img/sprite.svg#super"></use></svg
         >
         <h2 class="modal-title">Спасибо за заявку!</h2>
-        <a href="#" class="modal-close" data-toggle="modal"
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal"
           ><svg class="cl-icon">
             <use href="img/sprite.svg#close"></use></svg
         ></a>

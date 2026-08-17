@@ -54,6 +54,6 @@ if (!empty($response['ok'])) {
     echo "bad";
 }
 
-echo "Имя: " . $user_name . "<br>";
-echo "Телефон: <i>" . $user_phone . "</i>";
+// echo "Имя: " . $user_name . "<br>";
+// echo "Телефон: <i>" . $user_phone . "</i>";
 ?>

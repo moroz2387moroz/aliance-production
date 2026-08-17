@@ -132,7 +132,7 @@
           >+7 (499) 686-10-14</a
         >
       </div>
-      <button class="header-button button" data-toggle="modal">
+      <button class="header-button button" data-toggle="modal" data-target="#feedback-modal">
         <svg class="icon-bts" width="24" height="24">
           <use href="img/sprite.svg#phone"></use>
         </svg>
