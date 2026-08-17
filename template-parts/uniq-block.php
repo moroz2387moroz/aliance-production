@@ -1,8 +1,8 @@
 <section class="section uniq">
       <div class="kunteynir">
-        <div class="seporator"></div>
         <?php 
         if (!empty ($block_title)) {
+          echo '<div class="seporator"></div>';
             echo '<h2 class="section-title">' . $block_title . '</h2>';
         }
         ?>

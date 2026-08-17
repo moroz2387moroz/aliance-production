@@ -3,15 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/" />
     <title><?= $page_title ?> - Aliance Production</title>
   </head>
   <body>
@@ -48,7 +40,7 @@
           </ul>
         </li>
         <li class="mobile-menu-item">
-          <a href="#" class="mobile-menu-link">Собственные торговые марки</a>
+          <a href="/own.php" class="mobile-menu-link">Собственные торговые марки</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Автохимия AG-Tech</a>
@@ -116,7 +108,7 @@
           <a href="/contract.php" class="header-nav-link">Контрактное производство</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Собственные торговые марки</a>
+          <a href="/own.php" class="header-nav-link">Собственные торговые марки</a>
         </li>
         <li class="header-nav-item">
           <a href="#" class="header-nav-link">Новости</a>
@@ -141,78 +133,21 @@
     </nav>
 
     <header class="header header-image <?= $header_style; ?>">
-      <div class="header-bg">
+      <div class="header-bg <?= $block_non; ?>">
         <div class="kunteynir">
-        <div class="header-content header-l-content">
+        <div class="header-content <?= $header_content_style; ?>">
+<picture class="picture object-fit-cover">
+    <source srcset="img/avto-him-bg.webp" type="image/webp">
+    <source srcset="img/avto-him-bg.png" type="image/png">
+    <img src="img/avto-him-bg.png" alt="header" class="h-img <?= $block_none; ?>">
+  </picture>
           <div class="seporator"></div>
-          <h1 class="header-title header-l-title"><?= $page_title ?></h1>
+          <h1 class="header-title <?= $title_style; ?>"><?= $page_title ?></h1>
           <div class="breadcrumbs">
             <a href="index.php" class="breadcrumb-link">Главная</a>
             <span class="breadcrumb-separator">&mdash;</span>
             <span class="breadcrumb-text"><?= $page_title ?></span>
           </div>
         </div></div>
-      </div>
-
-      <div class="kunteynir">
-        <!-- <div class="header-content content-low">
-          <div class="seporator"></div>
-          <h1 class="header-title header-l-title">о компании</h1>
-          <p class="header-text header-l-text"></p>
-        </div> -->
-
-        <div class="swiper sw sw-light">
-          <ul class="swiper-wrapper header-features">
-            <li class="swiper-slide header-features-item">
-              <svg class="icon-svg" width="36" height="36">
-                <use href="img/sprite.svg#time"></use>
-              </svg>
-              <p class="header-features-text">
-                Непрерывная работа c&nbsp;2017 года
-              </p>
-            </li>
-            <li class="swiper-slide header-features-item">
-              <svg class="icon-svg" width="36" height="36">
-                <use href="img/sprite.svg#certificate"></use>
-              </svg>
-              <p class="header-features-text">Вся продукция сертифицирована</p>
-            </li>
-            <li class="swiper-slide header-features-item">
-              <svg class="icon-svg" width="36" height="36">
-                <use href="img/sprite.svg#control"></use>
-              </svg>
-              <p class="header-features-text">
-                Контроль качества на&nbsp;всех этапах
-              </p>
-            </li>
-            <li class="swiper-slide header-features-item">
-              <svg class="icon-svg" width="36" height="36">
-                <use href="img/sprite.svg#delivery"></use>
-              </svg>
-              <p class="header-features-text">
-                Возможны поставки по&nbsp;всей России
-              </p>
-            </li>
-            <li class="swiper-slide header-features-item">
-              <svg class="icon-svg" width="36" height="36">
-                <use href="img/sprite.svg#speed"></use>
-              </svg>
-              <p class="header-features-text">Оперативное производство</p>
-            </li>
-          </ul>
-
-          <div class="slider-bts">
-            <div class="slider-bts-prev">
-              <svg class="icon-svg" width="36" height="24">
-                <use href="img/sprite.svg#sll-pr"></use>
-              </svg>
-            </div>
-            <div class="slider-bts-next">
-              <svg class="icon-svg" width="36" height="24">
-                <use href="img/sprite.svg#sll-nxt"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
       </div>
     </header>
