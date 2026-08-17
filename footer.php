@@ -26,7 +26,7 @@
                   id="user-phone"
                   name="userphone"
                   type="tel"
-                  class="input"
+                  class="input phone-mask"
                   placeholder=" "
                 />
                 <label class="input-group-label" for="user-phone"
@@ -197,7 +197,7 @@
               <input
                 id="m-user-phone"
                 type="tel"
-                class="input modal-input"
+                class="input modal-input phone-mask"
                 placeholder=" "
                 name="userphone"
               />
