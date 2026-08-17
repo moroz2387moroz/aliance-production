@@ -18,7 +18,7 @@
                   type="text"
                   class="input"
                   placeholder=" "
-                  maxlength="100"
+                  maxlength="50"
                   required
                 />
                 <label class="input-group-label" for="user-name">Имя</label>
@@ -181,7 +181,7 @@
           время ответит на&nbsp;все интересующие вопросы и поможем&nbsp;даже в
           самых&nbsp;сложных случаях!
         </p>
-        <form action="#" class="modal-form">
+        <form action="handler.php" method="POST" class="modal-form">
           <div class="input-group-wrapper input-group-vertical">
             <div class="input-group modal-input-group">
               <input
@@ -189,6 +189,9 @@
                 type="text"
                 class="input modal-input"
                 placeholder=" "
+                maxlength="50"
+                name="username"
+                required
               />
               <label
                 class="input-group-label modal-input-label"
@@ -202,6 +205,9 @@
                 type="tel"
                 class="input modal-input"
                 placeholder=" "
+                name="userphone"
+                maxlength="30"
+                required
               />
               <label
                 class="input-group-label modal-input-label"
@@ -230,6 +236,7 @@
     </div>
 
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
