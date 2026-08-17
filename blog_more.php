@@ -7,6 +7,6 @@ $block_non = "transparent";
 include_once 'header.php'; ?>
 <?php
     $block_title = "Так же вас может заинтересовать:";
-    include_once './template-parts/uniq-block.php';
+    include_once './template-parts/blog-slider.php';
 ?>
   <?php include_once 'footer.php'; ?>

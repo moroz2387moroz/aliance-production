@@ -233,7 +233,7 @@
 
 <?php
     $block_title = "Блог экспертов в&nbsp;области производства";
-    include_once './template-parts/uniq-block.php';
+    include_once './template-parts/blog-slider.php';
 ?>
 
     
