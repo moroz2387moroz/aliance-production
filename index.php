@@ -286,7 +286,11 @@
                 оценить значение форм воздействия.
               </p>
             </div>
-            <img src="img/avto-him.png" alt="автохимия" class="card-image" />
+            <picture class="picture object-fit-cover">
+    <source srcset="img/avto-him.webp" type="image/webp">
+    <source srcset="img/avto-him.png" type="image/png">
+    <img src="img/avto-him.png" alt="автохимия" class="card-image">
+  </picture>
           </a>
           <a class="card card-basis" href="#">
             <div class="card-content">
@@ -297,7 +301,11 @@
                 элементы.
               </p>
             </div>
-            <img src="img/bit-him.png" alt="бытовая химия" class="card-image" />
+            <picture class="picture object-fit-cover">
+    <source srcset="img/bit-him.webp" type="image/webp">
+    <source srcset="img/bit-him.png" type="image/png">
+    <img src="img/bit-him.png" alt="бытовая химия" class="card-image">
+  </picture>
           </a>
           <a class="card card-basis" href="#">
             <div class="card-content">
@@ -306,11 +314,11 @@
                 Лишь интерактивные прототипы призваны к&nbsp;ответу.
               </p>
             </div>
-            <img
-              src="img/dezinfect.png"
-              alt="дез средства"
-              class="card-image"
-            />
+<picture class="picture object-fit-cover">
+    <source srcset="img/dezinfect.webp" type="image/webp">
+    <source srcset="img/dezinfect.png" type="image/png">
+    <img src="img/dezinfect.png" alt="дез средства" class="card-image">
+  </picture>
           </a>
           <a class="card card-basis" href="#">
             <div class="card-content">
@@ -320,7 +328,11 @@
                 оценить значение форм воздействия.
               </p>
             </div>
-            <img src="img/dezinfect.png" alt="аэрозоли" class="card-image" />
+            <picture class="picture object-fit-cover">
+    <source srcset="img/dezinfect.webp" type="image/webp">
+    <source srcset="img/dezinfect.png" type="image/png">
+    <img src="img/dezinfect.png" alt="Пищевые аэрозоли" class="card-image">
+  </picture>
           </a>
           <a class="card card-basis" href="#">
             <div class="card-content">
@@ -329,7 +341,11 @@
                 Лишь интерактивные прототипы призваны к&nbsp;ответу.
               </p>
             </div>
-            <img src="img/avto-him.png" alt="косметика" class="card-image" />
+            <picture class="picture object-fit-cover">
+    <source srcset="img/avto-him.webp" type="image/webp">
+    <source srcset="img/avto-him.png" type="image/png">
+    <img src="img/avto-him.png" alt="Косметическая продукция" class="card-image">
+  </picture>
           </a>
           <a class="card card-basis" href="#">
             <div class="card-content">
@@ -340,50 +356,27 @@
                 элементы.
               </p>
             </div>
-            <img
-              src="img/bit-him.png"
-              alt="Краски аэрозольные"
-              class="card-image"
-            />
+            <picture class="picture object-fit-cover">
+    <source srcset="img/bit-him.webp" type="image/webp">
+    <source srcset="img/bit-him.png" type="image/png">
+    <img src="img/bit-him.png" alt="Краски аэрозольные" class="card-image">
+  </picture>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="section uniq">
-      <div class="kunteynir">
-        <div class="seporator"></div>
-        <h2 class="section-title">собственные торговые марки</h2>
-        <div class="uniq-cards">
-          <a class="uniq-card" href="#">
-            <svg class="uniq-card-logo">
-              <use href="img/sprite.svg#inc-1"></use>
-            </svg>
-            <h3 class="uniq-card-title">Автохимия AG-Tech</h3>
-            <p class="uniq-card-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </a>
-          <a class="uniq-card" href="#">
-            <svg class="uniq-card-logo">
-              <use href="img/sprite.svg#inc-2"></use>
-            </svg>
-
-            <h3 class="uniq-card-title">Автохимия AP</h3>
-            <p class="uniq-card-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </a>
-        </div>
-      </div>
-    </section>
+    <?php
+    $block_title = "Собственные торговые марки";
+    include_once './template-parts/uniq-block.php';
+?>
 
     <section class="section founder">
-      <img class="founder-photo" src="img/founder.jpg" alt="Основатель" />
+      <picture picture object-fit-cover">
+    <source srcset="img/founder.webp" type="image/webp">
+    <source srcset="img/founder.jpg" type="image/jpg">
+    <img src="img/founder.jpg" alt="Основатель" class="founder-photo">
+  </picture>
       <div class="kunteynir">
         <div class="founder-inner">
           <div class="founder-content">
@@ -487,31 +480,67 @@
           </div>
           <div class="clients-logo-list">
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <div class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </div>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
           </div>
         </div>
@@ -527,11 +556,12 @@
         <div class="swiper sw-blog">
           <div class="swiper-wrapper">
             <a href="#" class="swiper-slide blog-card"
-              ><img
-                src="img/blog-card-1.jpg"
-                alt="Блог"
-                class="blog-card-image"
-              />
+              >
+              <picture class="picture object-fit-cover">
+    <source srcset="img/blog-card-1.webp" type="image/webp">
+    <source srcset="img/blog-card-1.png" type="image/jpg">
+    <img src="img/blog-card-1.jpg" alt="Блог" class="blog-card-image">
+  </picture>
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
               </h3>
@@ -542,11 +572,11 @@
               </p>
             </a>
             <a href="#" class="swiper-slide blog-card"
-              ><img
-                src="img/blog-card-2.jpg"
-                alt="Блог"
-                class="blog-card-image"
-              />
+              ><picture class="picture object-fit-cover">
+    <source srcset="img/blog-card-2.webp" type="image/webp">
+    <source srcset="img/blog-card-2.png" type="image/jpg">
+    <img src="img/blog-card-2.jpg" alt="Блог" class="blog-card-image">
+  </picture>
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна
               </h3>
@@ -557,11 +587,11 @@
               </p>
             </a>
             <a href="#" class="swiper-slide blog-card"
-              ><img
-                src="img/blog-card-1.jpg"
-                alt="Блог"
-                class="blog-card-image"
-              />
+              ><picture class="picture object-fit-cover">
+    <source srcset="img/blog-card-1.webp" type="image/webp">
+    <source srcset="img/blog-card-1.png" type="image/jpg">
+    <img src="img/blog-card-1.jpg" alt="Блог" class="blog-card-image">
+  </picture>
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
               </h3>
@@ -572,11 +602,11 @@
               </p>
             </a>
             <a href="#" class="swiper-slide blog-card"
-              ><img
-                src="img/blog-card-2.jpg"
-                alt="Блог"
-                class="blog-card-image"
-              />
+              ><picture class="picture object-fit-cover">
+    <source srcset="img/blog-card-2.webp" type="image/webp">
+    <source srcset="img/blog-card-2.png" type="image/jpg">
+    <img src="img/blog-card-2.jpg" alt="Блог" class="blog-card-image">
+  </picture>
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна
               </h3>
@@ -606,5 +636,4 @@
         </div>
       </div>
     </section>
-
    <?php include_once 'footer.php'; ?>
