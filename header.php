@@ -139,7 +139,13 @@
 <picture class="picture object-fit-cover">
     <source srcset="img/avto-him-bg.webp" type="image/webp">
     <source srcset="img/avto-him-bg.png" type="image/png">
-    <img src="img/avto-him-bg.png" alt="header" class="h-img <?= $block_none; ?>">
+    <img
+      src="img/avto-him-bg.png"
+      alt="header"
+      class="h-img <?= $block_none; ?>"
+      width="1600"
+      height="900"
+    >
   </picture>
           <div class="seporator"></div>
           <h1 class="header-title <?= $title_style; ?>"><?= $page_title ?></h1>

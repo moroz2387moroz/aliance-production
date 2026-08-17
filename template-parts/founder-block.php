@@ -1,5 +1,5 @@
 <section class="section founder">
-      <img class="founder-photo" src="img/founder.jpg" alt="Основатель" />
+      <img class="founder-photo" src="img/founder.jpg" alt="Основатель" width="1200" height="800" />
       <div class="kunteynir">
         <div class="founder-inner">
           <div class="founder-content">

@@ -72,31 +72,31 @@
           </div>
           <div class="clients-logo-list">
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
             </a>
             <div class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
             </div>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" />
+              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
             </a>
           </div>
         </div>

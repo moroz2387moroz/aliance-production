@@ -11,7 +11,7 @@
               <picture class="picture object-fit-cover">
     <source srcset="img/blog-card-1.webp" type="image/webp">
     <source srcset="img/blog-card-1.jpg" type="image/jpg">
-    <img src="img/blog-card-1.jpg" alt="Блог" class="blog-card-image">
+    <img src="img/blog-card-1.jpg" alt="Блог" class="blog-card-image" width="640" height="420">
   </picture>
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
@@ -26,7 +26,7 @@
               ><picture class="picture object-fit-cover">
     <source srcset="img/blog-card-2.webp" type="image/webp">
     <source srcset="img/blog-card-2.jpg" type="image/jpg">
-    <img src="img/blog-card-2.jpg" alt="Блог" class="blog-card-image">
+    <img src="img/blog-card-2.jpg" alt="Блог" class="blog-card-image" width="640" height="420">
   </picture>
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна
@@ -41,7 +41,7 @@
               ><picture class="picture object-fit-cover">
     <source srcset="img/blog-card-1.webp" type="image/webp">
     <source srcset="img/blog-card-1.jpg" type="image/jpg">
-    <img src="img/blog-card-1.jpg" alt="Блог" class="blog-card-image">
+    <img src="img/blog-card-1.jpg" alt="Блог" class="blog-card-image" width="640" height="420">
   </picture>
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
@@ -56,7 +56,7 @@
               ><picture class="picture object-fit-cover">
     <source srcset="img/blog-card-2.webp" type="image/webp">
     <source srcset="img/blog-card-2.jpg" type="image/jpg">
-    <img src="img/blog-card-2.jpg" alt="Блог" class="blog-card-image">
+    <img src="img/blog-card-2.jpg" alt="Блог" class="blog-card-image" width="640" height="420">
   </picture>
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна

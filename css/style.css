@@ -64,6 +64,14 @@ body {
 .pb-50 {
   padding-bottom: 50px;
 }
+
+.header-image-f {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
 .header-image-f::before {
   content: "";
   position: absolute;
@@ -479,10 +487,12 @@ body {
 .basis-text {
   margin-bottom: 24.625rem;
 }
+
 .card-image {
   position: absolute;
   right: 0;
   bottom: 0;
+  height:300px;
   width: 100%;
   z-index: 0;
 }
@@ -1123,6 +1133,9 @@ body {
   }
   .uniq-card {
     grid-template-columns: 100px 1fr;
+  }
+  .card-image {
+    height: 215px;
   }
   .founder-photo {
     width: 40%;

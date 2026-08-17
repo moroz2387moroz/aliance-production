@@ -1,6 +1,12 @@
  <section class="cta">
       <div class="bg-grey section-cta">
-        <img src="img/bg-cta.png" alt="call to action" class="cta-image" />
+        <img
+          src="img/bg-cta.png"
+          alt="call to action"
+          class="cta-image"
+          width="1600"
+          height="900"
+        />
         <div class="cta-form-wrapper kunteynir">
           <form action="handler.php" method="POST" class="cta-form">
             <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
