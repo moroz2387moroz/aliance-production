@@ -991,6 +991,14 @@ body {
   width: 24px;
   height: 24px;
 }
+
+#alert-modal .modal-title {
+  margin-bottom: 10px;
+}
+
+#alert-modal .modal-text {
+  margin-top: 0;
+}
 .modal-text {
   font-style: normal;
   font-weight: 400;
@@ -1009,6 +1017,8 @@ body {
   margin-top: 30px;
 }
 .modal-form-bts {
+  text-decoration: none;
+  text-align: center;
   padding: 20px 45px;
   display: block;
   width: 100%;
@@ -1017,6 +1027,7 @@ body {
 .super-icon {
   width: 285px;
   height: 246px;
+  margin-bottom: 20px;
 }
 @media (max-width: 1850px) {
   html {
