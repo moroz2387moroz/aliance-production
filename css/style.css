@@ -1240,6 +1240,11 @@ body {
     padding: 2.2rem 2.5rem;
     border-right: 1px solid rgba(235, 2235, 240, 0.2);
   }
+
+.navbar-light .mobile-menu-toggle {
+  padding: 1.6rem 2.5rem;
+}
+
   .navbar-light .mobile-menu-line {
     background-color: #292d33;
   }
@@ -1347,10 +1352,10 @@ body {
     display: none;
   }
   .close-menu .mobile-menu-line:nth-child(1) {
-    transform: rotate(45deg) translateY(9px);
+    transform: rotate(45deg) translateY(19px);
   }
   .close-menu .mobile-menu-line:nth-child(3) {
-    transform: rotate(-45deg) translateY(-9px);
+    transform: rotate(-45deg) translateY(-20px);
   }
   .clients-inner {
     flex-direction: column;
