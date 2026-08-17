@@ -43,7 +43,7 @@
           <a href="/own.php" class="mobile-menu-link">Собственные торговые марки</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автохимия AG-Tech</a>
+              <a href="/product-ag.php" class="mobile-submenu-link">Автохимия AG-Tech</a>
             </li>
             <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Автохимия AP</a>
@@ -51,10 +51,10 @@
           </ul>
         </li>
         <li class="mobile-menu-item">
-          <a href="#" class="mobile-menu-link">Новости</a>
+          <a href="/blog.php" class="mobile-menu-link">Новости</a>
         </li>
         <li class="mobile-menu-item">
-          <a href="#" class="mobile-menu-link">Контакты</a>
+          <a href="/contact.php" class="mobile-menu-link">Контакты</a>
         </li>
       </ul>
       <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
@@ -111,10 +111,10 @@
           <a href="/own.php" class="header-nav-link">Собственные торговые марки</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Новости</a>
+          <a href="/blog.php" class="header-nav-link">Новости</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контакты</a>
+          <a href="/contact.php" class="header-nav-link">Контакты</a>
         </li>
       </ul>
       <div class="header-phone">
