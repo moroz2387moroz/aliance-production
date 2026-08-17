@@ -1078,7 +1078,7 @@ body {
   align-items: center;
 }
 
-.modal {
+.modal-window {
   visibility: hidden;
   transform: translateX(-100%);
   position: fixed;
@@ -1091,17 +1091,17 @@ body {
   display: flex;
 }
 
-.modal.is-open {
+.modal-window.is-open {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
 }
 
-.modal.is-open .modal-dialog {
+.modal-window.is-open .modal-dialog {
   opacity: 1;
 }
 
-.modal.is-open .modal-dialog {
+.modal-window.is-open .modal-dialog {
   transform: translateY(0);
 }
 
@@ -1172,6 +1172,11 @@ body {
   display: block;
   width: 100%;
   margin-bottom: 24px;
+}
+
+.super-icon {
+  width: 285px;
+  height: 246px;
 }
 
 @media (max-width: 1850px) {

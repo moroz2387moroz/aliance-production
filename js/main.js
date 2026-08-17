@@ -149,6 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const forms = document.querySelectorAll("form");
+  const superModal = document.querySelector(".super");
 
   forms.forEach((form) => {
     console.log("Form");
@@ -183,9 +184,9 @@ document.addEventListener("DOMContentLoaded", () => {
           }).then((response) => {
             if (response.ok) {
               thisForm.reset();
-              alert("Форма отправлена, спасибо");
+              superModal.classList.add("is-open");
             } else {
-              alert("Ошибка! Текст ошибки: ".response.statusText);
+              console.log("Ошибка! Текст ошибки: ".response.statusText);
             }
           });
         };
@@ -197,8 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
     'input[name="userphone"], input[type="tel"]',
   );
 
-
-// маска для телефона
+  // маска для телефона
   phoneInputs.forEach((input) => {
     input.addEventListener("input", () => {
       let value = input.value.replace(/\D/g, "").substring(0, 11);

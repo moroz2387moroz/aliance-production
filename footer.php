@@ -165,7 +165,7 @@
       </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal modal-window">
       <div class="modal-dialog">
         <h2 class="modal-title">Есть вопросы?</h2>
         <a href="#" class="modal-close" data-toggle="modal"
@@ -224,6 +224,23 @@
             </div>
           </div>
         </form>
+      </div>
+    </div>
+
+    <div class="modal-window super">
+      <div class="modal-dialog">
+         <svg class="super-icon">
+            <use href="img/sprite.svg#super"></use></svg
+        >
+        <h2 class="modal-title">Спасибо за заявку!</h2>
+        <a href="#" class="modal-close" data-toggle="modal"
+          ><svg class="cl-icon">
+            <use href="img/sprite.svg#close"></use></svg
+        ></a>
+        <p class="modal-text">
+          Наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее время ответит на&nbsp;все интересующие вопросы и&nbsp;поможем даже в&nbsp;самых сложных случаях!
+        </p>
+        <a href="/" class="button modal-form-bts">Вернуться на главную</a>
       </div>
     </div>
 
