@@ -1,5 +1,9 @@
 <section class="section founder">
-      <img class="founder-photo" src="img/founder.jpg" alt="Основатель" width="1200" height="800" />
+<picture class="picture object-fit-cover">
+    <source srcset="img/founder.webp" type="image/webp">
+    <source srcset="img/founder.jpg" type="image/jpg">
+    <img src="img/founder.jpg" alt="Основатель" class="founder-photo">
+  </picture>
       <div class="kunteynir">
         <div class="founder-inner">
           <div class="founder-content">

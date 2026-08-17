@@ -72,31 +72,67 @@
           </div>
           <div class="clients-logo-list">
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <div class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </div>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
             <a class="clients-logo-item" href="#">
-              <img src="img/client.png" alt="client" class="clients-logo" width="220" height="120" />
+              <picture class="picture object-fit-cover">
+    <source srcset="img/client.webp" type="image/webp">
+    <source srcset="img/client.png" type="image/png">
+    <img src="img/client.png" alt="client" class="clients-logo">
+  </picture>
             </a>
           </div>
         </div>
